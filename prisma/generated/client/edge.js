@@ -119,7 +119,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Users\\Vini\\Desktop\\API RG Market\\prisma\\generated\\client",
+      "value": "C:\\Users\\Vini\\Desktop\\Projetos\\API RG Market\\prisma\\generated\\client",
       "fromEnvVar": null
     },
     "config": {
@@ -130,6 +130,10 @@ const config = {
         "fromEnvVar": null,
         "value": "windows",
         "native": true
+      },
+      {
+        "fromEnvVar": null,
+        "value": "debian-openssl-3.0.x"
       }
     ],
     "previewFeatures": [],
@@ -146,6 +150,7 @@ const config = {
     "db"
   ],
   "activeProvider": "mysql",
+  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
@@ -154,8 +159,9 @@ const config = {
       }
     }
   },
-  "inlineSchema": "Ly8gcHJpc21hL3NjaGVtYS5wcmlzbWENCmdlbmVyYXRvciBjbGllbnQgew0KICBwcm92aWRlciA9ICJwcmlzbWEtY2xpZW50LWpzIg0KICBvdXRwdXQgICA9ICIuL2dlbmVyYXRlZC9jbGllbnQiDQp9DQoNCmRhdGFzb3VyY2UgZGIgew0KICBwcm92aWRlciA9ICJteXNxbCINCiAgdXJsICAgICAgPSBlbnYoIkRBVEFCQVNFX1VSTCIpDQp9DQoNCm1vZGVsIENvZGUgew0KICBpZCAgICAgICAgICAgSW50ICAgICBAaWQgQGRlZmF1bHQoYXV0b2luY3JlbWVudCgpKQ0KICBwcmljZSAgICAgICAgSW50DQogIGNhcmRDb2RlICAgICBTdHJpbmcNCiAgY2FyZFBhc3N3b3JkIFN0cmluZw0KICBlbWFpbE93bmVyICAgU3RyaW5nPw0KfQ0K",
-  "inlineSchemaHash": "566b8455ed27e89079593dcaf6b90b051cf594ba4ebe10a130c1c2d1b09c14d0"
+  "inlineSchema": "Ly8gcHJpc21hL3NjaGVtYS5wcmlzbWENCmdlbmVyYXRvciBjbGllbnQgew0KICBwcm92aWRlciAgICAgID0gInByaXNtYS1jbGllbnQtanMiDQogIG91dHB1dCAgICAgICAgPSAiLi9nZW5lcmF0ZWQvY2xpZW50Ig0KICBiaW5hcnlUYXJnZXRzID0gWyJuYXRpdmUiLCAiZGViaWFuLW9wZW5zc2wtMy4wLngiXQ0KfQ0KDQpkYXRhc291cmNlIGRiIHsNCiAgcHJvdmlkZXIgPSAibXlzcWwiDQogIHVybCAgICAgID0gZW52KCJEQVRBQkFTRV9VUkwiKQ0KfQ0KDQptb2RlbCBDb2RlIHsNCiAgaWQgICAgICAgICAgIEludCAgICAgQGlkIEBkZWZhdWx0KGF1dG9pbmNyZW1lbnQoKSkNCiAgcHJpY2UgICAgICAgIEludA0KICBjYXJkQ29kZSAgICAgU3RyaW5nDQogIGNhcmRQYXNzd29yZCBTdHJpbmcNCiAgZW1haWxPd25lciAgIFN0cmluZz8NCn0NCg==",
+  "inlineSchemaHash": "cc88f1b2b62094beabf3e382376f52653b1eef4279dec9dc5fbcbb02234abd1c",
+  "noEngine": false
 }
 config.dirname = '/'
 
