@@ -2,7 +2,7 @@ import express, { Request, Response } from 'express';
 const cors = require('cors');
 import { PrismaClient } from '../prisma/generated/client';
 // import { createOrderMercadoPago, createOrderPayPal, receiveWebhook } from './controllers/PaymentController';
-import { createAccount } from './controllers/ApiController';
+import { createAccount, recoverPassword } from './controllers/ApiController';
 
 const app = express();
 
@@ -20,6 +20,8 @@ app.get('/', (req: Request, res: Response) => {
 })
 
 app.post('/register', createAccount);
+app.post('/password', recoverPassword);
+
 // app.post('/buy-code-mp', createOrderMercadoPago);
 // app.post('/buy-code-pp', createOrderPayPal);
 // app.get('/sucess', (req: Request, res: Response) => res.send("Sucess"));
