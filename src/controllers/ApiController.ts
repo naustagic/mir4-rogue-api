@@ -50,7 +50,7 @@ export const recoverPassword = async (req: Request, res: Response) => {
       },
     })
     console.log(response.data);
-    return res.status(200).json({ message: "Senha alterada com sucesso!"});
+    return res.status(200).json(response.data);
   } catch (error) {
     console.log(error);
     return res.status(500).json({ message: "Algo de errado aconteceu." });
