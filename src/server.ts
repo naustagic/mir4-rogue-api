@@ -5,14 +5,18 @@ import { PrismaClient } from '../prisma/generated/client';
 import { createAccount } from './controllers/ApiController';
 
 const app = express();
-app.use(cors());
+
+const corsOptions = {
+  origin: 'https://mir4-rogue.com',
+};
+app.use(cors(corsOptions));
 
 export const prisma = new PrismaClient();
 
 app.use(express.json());
 
-app.get('/api', (req: Request, res: Response) => {
-  res.json({ message: 'Hello World' });
+app.get('/', (req: Request, res: Response) => {
+  res.json({ message: 'Conectado com sucesso' });
 })
 
 app.post('/register', createAccount);
@@ -25,6 +29,6 @@ app.post('/register', createAccount);
 
 
 
-app.listen(3334, () => {
-  console.log('Servidor rodando na porta 3334');
+app.listen(8000, () => {
+  console.log('Servidor rodando na porta 8000');
 });
