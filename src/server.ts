@@ -7,7 +7,7 @@ import { createAccount } from './controllers/ApiController';
 const app = express();
 
 const corsOptions = {
-  origin: 'https://mir4-rogue.com',
+  origin: ['https://mir4-rogue.com', 'https://www.mir4-rogue.com'],
 };
 app.use(cors(corsOptions));
 
